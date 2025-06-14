@@ -1,8 +1,13 @@
-import React from 'react'
+import { Link, NavLink } from 'react-router'
+import { AuthContext } from '../context/AuthContext'
+
 
 function Navbar() {
+  // const {user,logOutUser}=use(AuthContext)
   return (
-    <div>Navbar</div>
+  <div>
+    sdf
+  </div>
   )
 }
 
