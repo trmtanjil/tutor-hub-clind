@@ -5,6 +5,8 @@ import {
 import Mainlayout from "./Mainlayout";
 
 import Home from "../Componets/Home";
+import Login from "../page/Login";
+import Register from "../page/Register";
  
 
 
@@ -18,6 +20,15 @@ export const router = createBrowserRouter([
             index:true,
             Component:Home,
           
+        },
+          {
+            path:'login',
+            Component:Login,
+          
+        },
+        {
+            path:'register',
+            Component:Register,
         },
      
       
