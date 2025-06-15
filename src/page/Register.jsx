@@ -17,7 +17,7 @@ function Register() {
 
       const handleRegister =e=>{
         e.preventDefault()
-           e.preventDefault();
+          
     
     const name= e.target.name.value;
     const photo = e.target.photo.value;

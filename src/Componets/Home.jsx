@@ -1,8 +1,15 @@
-import React from 'react'
+import FindTutors from '../page/FindTutors'
 
 function Home() {
+
+
   return (
+  <>
     <div>Home</div>
+         
+
+   
+  </>
   )
 }
 

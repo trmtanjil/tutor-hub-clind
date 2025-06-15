@@ -28,7 +28,7 @@ function Navbar() {
           
          <li><a><NavLink    to="/" className="hover:text-blue-500  font-bold text-xl">Home</NavLink></a></li>
         <li>  
-          <NavLink   to="/brouserlisting" className="hover:text-blue-500 font-bold text-xl">Find tutors
+          <NavLink   to="/findtutors" className="hover:text-blue-500 font-bold text-xl">Find tutors
 </NavLink>
          </li>
          <li> <NavLink   to="/mylisting" className="hover:text-blue-500 font-bold text-xl">Add Tutorials</NavLink></li>
@@ -49,7 +49,7 @@ function Navbar() {
     <ul className="menu menu-horizontal px-1">
  <div className="hidden sm:flex space-x-5">
          <NavLink    to="/" className="hover:text-blue-500  font-bold text-xl">Home</NavLink>
-          <NavLink   to="/brouserlisting" className="hover:text-blue-500 font-bold text-xl">Find tutors
+          <NavLink   to="/findtutors" className="hover:text-blue-500 font-bold text-xl">Find tutors
 </NavLink>
           <NavLink   to="/mylisting" className="hover:text-blue-500 font-bold text-xl">Add Tutorials</NavLink>
           <NavLink   to='userdataadd' className="hover:text-blue-500 font-bold text-xl">My Tutorials</NavLink>

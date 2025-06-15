@@ -7,6 +7,9 @@ import Mainlayout from "./Mainlayout";
 import Home from "../Componets/Home";
 import Login from "../page/Login";
 import Register from "../page/Register";
+import PrivetRouter from "../Privetrouter/PrivetRouter";
+import AddTutor from "../page/AddTutor";
+import FindTutors from "../page/FindTutors";
  
 
 
@@ -29,7 +32,18 @@ export const router = createBrowserRouter([
         {
             path:'register',
             Component:Register,
+        }, 
+        {
+            path:'mylisting',
+            element:<PrivetRouter><AddTutor></AddTutor></PrivetRouter>,
+            
         },
+           {
+            path:'findtutors',
+            element: <FindTutors></FindTutors>,
+            
+        },
+
      
       
      
