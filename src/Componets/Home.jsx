@@ -1,5 +1,5 @@
-import FindTutors from '../page/FindTutors'
-import TutorCount from '../page/TutorCount'
+import AllLanguage from '../page/AllLanguage'
+ import TutorCount from '../page/TutorCount'
 
 function Home() {
 
@@ -9,7 +9,7 @@ function Home() {
     <div>Home</div>
     <TutorCount></TutorCount>
          
-
+    <AllLanguage></AllLanguage>
    
   </>
   )
