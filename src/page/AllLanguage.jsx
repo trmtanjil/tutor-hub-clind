@@ -52,6 +52,10 @@ const AllLanguage = () => {
     },
   ];
 
+ 
+
+
+
   return (
     <div className="max-w-6xl mx-auto p-6">
       <h2 className="text-3xl font-bold mb-6 text-center">Language Categories</h2>
@@ -60,7 +64,9 @@ const AllLanguage = () => {
           <div
             key={idx}
             className="flex items-center justify-between p-4 border rounded-lg shadow hover:shadow-lg cursor-pointer transition"
-            onClick={() => navigate(`/find-tutors/${lang.name.toLowerCase()}`)}
+            onClick={() => navigate(`/findtutors/${lang.name.toLowerCase()}`)}
+
+
           >
             <div className="flex items-center gap-4">
               <div className="text-3xl">{lang.icon}</div>
@@ -69,7 +75,7 @@ const AllLanguage = () => {
                 <p className="text-sm text-gray-500">{lang.count} teachers</p>
               </div>
             </div>
-            <ArrowRight />
+            <ArrowRight /> 
           </div>
         ))}
       </div>

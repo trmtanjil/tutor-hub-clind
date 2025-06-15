@@ -2,6 +2,7 @@
  import React, { use } from 'react'
 import Swal from 'sweetalert2';
 import { AuthContext } from '../context/AuthContext';
+import axios from 'axios';
   
  function AddTutor() {
   const {user}=use(AuthContext)
@@ -12,27 +13,26 @@ import { AuthContext } from '../context/AuthContext';
     const form =e.target;
     const formData = new FormData(form)
     const newFromData=Object.fromEntries(formData.entries());
+    newFromData.likedBy = []
+    newFromData.email = user?.email
     console.log(newFromData)
 
     // add product server 
-    fetch('http://localhost:5000/tutor',{
-      method:'POST',
-      headers:{
-        'content-type':'application/json'
-      },
-      body:JSON.stringify(newFromData)
-    })
-    .then(res=>res.json())
-    .then(data=>{
-      Swal.fire({
+
+    axios.post(`${import.meta.env.VITE_API_URL}/tutor`,newFromData).then(data=>{
+      console.log(data)
+        Swal.fire({
   position: "top-end",
   icon: "success",
   title: "Your Post  has been saved",
   showConfirmButton: false,
   timer: 1500
 });
-      console.log(data)
+    }).catch(err=>{
+      console.log(err)
     })
+
+ 
   }
 
 

@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
             
         },
            {
-            path:'findtutors',
+            path:'findtutors/:language',
             element: <FindTutors></FindTutors>,
             
         },
