@@ -12,7 +12,14 @@ function FindTutors() {
 
   return (
     <div className="p-5">
- 
+      {/* Optional: Search Input */}
+      <input
+        type="text"
+        placeholder="Search Tutor..."
+        className="input input-bordered w-full max-w-xs mb-5"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
 
       {/* ✅ Grid container (fixed) */}
       
