@@ -2,15 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
 function FindTutors() {
-  const { language } = useParams(); // ✅ get language from URL
+  const { language } = useParams(); // get language from URL
   const [alltutor, setAlltutor] = useState([]);
 
   useEffect(() => {
+     let url =`${import.meta.env.VITE_API_URL}/tutor`;
     if (language) {
-      fetch(`http://localhost:5000/tutor/bylanguage?language=${language}`)
-        .then(res => res.json())
-        .then(data => setAlltutor(data));
+      url = `${import.meta.env.VITE_API_URL}/tutor/bylanguage?language=${language}`;
     }
+
+    fetch(url)
+      .then(res => res.json())
+      .then(data => setAlltutor(data));
   }, [language]);
 
   return (
