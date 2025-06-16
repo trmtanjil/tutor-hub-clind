@@ -33,7 +33,7 @@ function Navbar() {
          </li>
          <li> <NavLink   to="/mylisting" className="hover:text-blue-500 font-bold text-xl">Add Tutorials</NavLink></li>
          <li>
-          <NavLink   to='userdataadd' className="hover:text-blue-500 font-bold text-xl">My Tutorials</NavLink>
+          <NavLink   to='/mytutor' className="hover:text-blue-500 font-bold text-xl">My Tutorials</NavLink>
          </li>
          <li>
           <NavLink   to='userdataadd' className="hover:text-blue-500 font-bold text-xl">My booked tutors</NavLink>
@@ -52,7 +52,7 @@ function Navbar() {
           <NavLink   to="/findtutors" className="hover:text-blue-500 font-bold text-xl">Find tutors
 </NavLink>
           <NavLink   to="/mylisting" className="hover:text-blue-500 font-bold text-xl">Add Tutorials</NavLink>
-          <NavLink   to='userdataadd' className="hover:text-blue-500 font-bold text-xl">My Tutorials</NavLink>
+          <NavLink   to='mytutor' className="hover:text-blue-500 font-bold text-xl">My Tutorials</NavLink>
            <NavLink   to='userdataadd' className="hover:text-blue-500 font-bold text-xl">My booked tutors</NavLink>
         </div>
       

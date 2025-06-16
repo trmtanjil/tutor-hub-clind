@@ -3,9 +3,11 @@
 import Swal from 'sweetalert2';
 import { AuthContext } from '../context/AuthContext';
 import axios from 'axios';
-  
+import {  useNavigate } from 'react-router';
+   
  function AddTutor() {
   const {user}=use(AuthContext)
+  const navigate =useNavigate()
  
 
       const handleAddProduct=e=>{
@@ -28,8 +30,9 @@ import axios from 'axios';
   showConfirmButton: false,
   timer: 1500
 });
+navigate('/')
     }).catch(err=>{
-      console.log(err)
+      console.log(err)   
     })
 
  

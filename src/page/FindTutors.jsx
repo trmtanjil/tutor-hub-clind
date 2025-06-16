@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 
 function FindTutors() {
   const { language } = useParams(); // get language from URL
@@ -34,9 +34,7 @@ function FindTutors() {
                 <span className="font-medium">Language:</span> {tutor.language}
               </p>
               <p className="text-sm text-gray-700">{tutor.description}</p>
-              <button className="mt-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition">
-                View Details
-              </button>
+               <button className="btn  mx-2 btn-xs  btn-primary"> <Link to={`/tutordetails/${tutor?._id}`}>   Details</Link></button>
             </div>
           </div>
         ))
