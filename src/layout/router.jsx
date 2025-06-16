@@ -13,7 +13,8 @@ import FindTutors from "../page/FindTutors";
 import MyTutor from "../page/MyTutor";
 import TutorDetails from "../page/TutorDetails";
 import axios from "axios";
-  
+import Myboked from "../page/Myboked";
+   
 
 
 export const router = createBrowserRouter([
@@ -40,6 +41,11 @@ export const router = createBrowserRouter([
             element:<PrivetRouter><AddTutor></AddTutor></PrivetRouter>,
             
         },
+         {
+            path:'myboked',
+            element:<PrivetRouter><Myboked></Myboked></PrivetRouter>,
+            
+        },
            {
             path:'findtutors/:language',
             element: <FindTutors></FindTutors>,
@@ -52,7 +58,7 @@ export const router = createBrowserRouter([
         {
           path:'mytutor/:email',
            loader:({params})=>axios(`${import.meta.env.VITE_API_URL}/mytutor/${params.email}`),
-          element:<MyTutor></MyTutor>,
+          element:<PrivetRouter><MyTutor></MyTutor></PrivetRouter>,
         },
         {
           path:'tutordetails/:id',

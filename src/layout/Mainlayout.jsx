@@ -1,6 +1,7 @@
 import { Outlet, useNavigation } from 'react-router'
 import Header from '../Componets/Header';
 import Footer from '../Componets/Footer';
+import Lading from '../page/Lading';
 
 
 function Mainlayout() {

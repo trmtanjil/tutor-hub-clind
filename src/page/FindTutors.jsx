@@ -30,6 +30,7 @@ function FindTutors() {
             />
             <div className="flex-1 space-y-2">
               <h2 className="text-xl font-bold text-gray-800">{tutor.username}</h2>
+              <h2 className="text-xl font-bold text-gray-800">reveiw  Count: {tutor.likedBy ? tutor.likedBy.length : 0}</h2>
               <p className="text-sm text-gray-600">
                 <span className="font-medium">Language:</span> {tutor.language}
               </p>
