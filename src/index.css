@@ -1,2 +1,36 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+
+.active {
+  position: relative;
+  display: inline-block; /* Ensure it's treated like a block-level element */
+  padding-bottom: 6px; /* Give space for underline */
+  color: #10b981;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, #10b981, #3b82f6);
+  animation: slideIn 0.4s ease-in-out forwards;
+  border-radius: 2px;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}

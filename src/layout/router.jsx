@@ -12,8 +12,8 @@ import AddTutor from "../page/AddTutor";
 import FindTutors from "../page/FindTutors";
 import MyTutor from "../page/MyTutor";
 import TutorDetails from "../page/TutorDetails";
+import axios from "axios";
   
-
 
 
 export const router = createBrowserRouter([
@@ -50,14 +50,16 @@ export const router = createBrowserRouter([
         element: <FindTutors />
         },
         {
-          path:'mytutor',
-          element:<MyTutor></MyTutor>
+          path:'mytutor/:email',
+           loader:({params})=>axios(`${import.meta.env.VITE_API_URL}/mytutor/${params.email}`),
+          element:<MyTutor></MyTutor>,
         },
         {
           path:'tutordetails/:id',
-         loader:({params})=>fetch(`http://localhost:5000/tutor/${params.id}`),
+         loader:({params})=>axios(`${import.meta.env.VITE_API_URL}/tutor/${params.id}`),
           element:<PrivetRouter><TutorDetails></TutorDetails></PrivetRouter>
-        }
+        },
+         
 
      
       
