@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 ## Expanding the ESLint configuration
 
- Tutor Finder server side link :  https://github.com/trmtanjil/tutorhub-server
+ Tutor Finder server site link :  https://github.com/trmtanjil/tutorhub-server
 
 🔍 Project Name: Tutor Finder
 🌐 Platform Type: Education Platform (React + Firebase)
