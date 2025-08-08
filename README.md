@@ -11,10 +11,10 @@ Currently, two official plugins are available:
 
  Tutor Finder server site link :  https://github.com/trmtanjil/tutorhub-server
 
-🔍 Project Name: Tutor Finder
-🌐 Platform Type: Education Platform (React + Firebase)
-🎯 Target Users: Students seeking help with studies
-🛠️ Primary Goal: Connect students with available tutors in specific subjects or locations.
+🔍 Project Name: Tutor Finder </br>
+🌐 Platform Type: Education Platform (React + Firebase) </br>
+🎯 Target Users: Students seeking help with studies </br>
+🛠️ Primary Goal: Connect students with available tutors in specific subjects or locations. </br>
 
 🧠 Core Benefits:
 Easy Tutor Search:
