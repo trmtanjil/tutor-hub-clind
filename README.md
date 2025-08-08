@@ -9,4 +9,38 @@ Currently, two official plugins are available:
 
 ## Expanding the ESLint configuration
 
- rommetFinder server side link : https://github.com/trmtanjil/rommet-finder-server
+ Tutor Finder server side link :  https://github.com/trmtanjil/tutorhub-server
+
+🔍 Project Name: Tutor Finder
+🌐 Platform Type: Education Platform (React + Firebase)
+🎯 Target Users: Students seeking help with studies
+🛠️ Primary Goal: Connect students with available tutors in specific subjects or locations.
+
+🧠 Core Benefits:
+Easy Tutor Search:
+
+Students can search for tutors by subject, location, or availability.
+
+Real-time Availability:
+
+Tutors and students can communicate or book appointments in real-time (via Firebase).
+
+Secure Authentication:
+
+Login/signup with Firebase Auth (email/password, Google, etc.).
+
+Personalized Dashboard:
+
+Separate dashboards for students and tutors to manage profiles, schedules, and sessions.
+
+Tutor Listings:
+
+Detailed tutor profiles with ratings, subjects, and pricing.
+
+Booking System:
+
+Students can request/book tutoring sessions.
+
+Responsive Design:
+
+Mobile and desktop-friendly interface.
